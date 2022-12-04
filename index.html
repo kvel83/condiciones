@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="index">
+        <button id="parte1" onclick="javascript:hideAndShow('item1')">Desafío Parte 1</button>
+        <button id="parte2" onclick="javascript:hideAndShow('item2')">Desafío parte 2</button>
+        <button id="parte3" onclick="javascript:hideAndShow('item3')">Desafío parte 3</button>
+    </div>
+
+    <div id="item1" class="item">
+        <img src="./assets/img/eva01.jpeg" alt="ciberpunk" id="image" onclick="javascript:hideAndShowBorder();">
+    </div>
+    <div id="item2" class="item">
+        <div id="container2">
+            <div class="sticker">
+                <img src="./assets/img/sticker1.png" alt="girl code">
+                <input type="number" name="cantidad1" id="cantidad1" value="0">
+            </div>
+            <div class="sticker">
+                <img src="./assets/img/sticker2.png" alt="girl code">
+                <input type="number" name="cantidad2" id="cantidad2" value="0">
+            </div>
+            <div class="sticker">
+                <img src="./assets/img/sticker3.png" alt="works in my machine">
+                <input type="number" name="cantidad3" id="cantidad3" value="0">
+            </div>
+            <div></div>
+            <div id="validation">
+                <p id="message">&nbsp;</p>
+                <button id="check" onclick="javascript:checkSum();">Verificar</button>
+            </div>
+        </div>
+    </div>
+    <div id="item3" class="item">
+        <div id="selects">
+            <select name="digito1" id="digito1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="digito2" id="digito2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="digito3" id="digito3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <button id="ingresar" onclick="javascript:checkPass();">Ingresar</button>
+        <p id="passMessage">&nbsp;</p>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
